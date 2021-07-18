@@ -15,6 +15,7 @@ jobs:
         with:
           build: npm run build
           start: npm start
+          record: true
         env: 
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
           # Recommended: pass the GitHub token lets this action correctly
