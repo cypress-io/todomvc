@@ -57,7 +57,7 @@ describe("TodoMVC", function () {
   it("adds 2 todos", function () {
     cy.get(".new-todo").type("learn testing{enter}").type("be cool{enter}");
 
-    cy.get(".todo-list li").should("have.length", 2);
+    cy.get(".todo-list li").should("have.length", 3);
   });
 
   context("No Todos", function () {
