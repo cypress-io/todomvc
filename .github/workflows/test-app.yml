@@ -1,6 +1,6 @@
-name: Cypress Tests
+name: Cypress Tests   # Name
 
-on: [push]
+on: [push]   #Tells Github to trigger workflow whenever there is a push
 
 jobs:
   cypress-run:
