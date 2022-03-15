@@ -35,7 +35,7 @@ export function $delegate(target, selector, type, handler) {
 	$on(target, type, dispatchEvent, useCapture);
 }
 
-// Find the element's parent with the given tag name:
+// Find the element's parent with the given tag name: 
 // $parent(qs('a'), 'div')
 export function $parent(element, tagName) {
 	if (!element.parentNode) {
