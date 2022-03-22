@@ -1,7 +1,9 @@
 name: Cypress Tests
 
-on: [push]
-
+on: 
+  push:
+    branches:
+      - feature/testing
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
