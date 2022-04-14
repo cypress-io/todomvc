@@ -439,9 +439,9 @@ describe('TodoMVC', function () {
   context('Counter', function () {
     it('should display the current number of todo items', function () {
       cy.createTodo(TODO_ITEM_ONE)
-      cy.get('.todo-count').contains('1 item left')
+      cy.get('.todo-count').contains('10 item left')
       cy.createTodo(TODO_ITEM_TWO)
-      cy.get('.todo-count').contains('2 items left')
+      cy.get('.todo-count').contains('20 items left')
     })
   })
 
