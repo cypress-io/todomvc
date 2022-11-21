@@ -27,6 +27,7 @@ describe('TodoMVC', function () {
   let TODO_ITEM_THREE = 'book a doctors appointment'
 
   beforeEach(function () {
+    //test
     // By default Cypress will automatically
     // clear the Local Storage prior to each
     // test which ensures no todos carry over
