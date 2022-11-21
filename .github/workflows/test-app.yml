@@ -1,7 +1,14 @@
-name: Cypress Tests
-
-on: [push]
-
+name: E2E
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to run tests against'
+        required: true
+        default: 'master'
+        type: choice
+        options:
+          - master
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
