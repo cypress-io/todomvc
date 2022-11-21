@@ -14,13 +14,8 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
-// const registerCypressGrep = require('@cypress/grep')
-// registerCypressGrep()
-const tagify = require('cypress-tags');
-tagify();
+import './commands';
 
-const registerCypressGrep = require('@cypress/grep')
-registerCypressGrep()
-// Alternatively you can use CommonJS syntax:
-// require('./commands')
+  Cypress.on('uncaught:exception', () => {
+    return false;
+  });

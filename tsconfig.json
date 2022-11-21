@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "sourceMap": false,
+    "outDir": "../../../dist/out-tsc",
+    "allowJs": true,
+    "types": ["cypress", "node"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.js"]
+}
