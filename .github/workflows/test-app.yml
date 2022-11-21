@@ -17,4 +17,6 @@ jobs:
           start: npm start
       - name: Run e2e tests
         run: |
-          yarn cypress run --browser electron
+          yarn cypress run --env ENV=${{ inputs.environment }} --browser electron
+        env:
+          CYPRESS_INCLUDE_TAGS: smoke
