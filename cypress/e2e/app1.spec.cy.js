@@ -3,6 +3,6 @@ describe('Testiraj nesto', () => {
         cy.visit('/');
     });  
     it('test 2', () => {
-        cy.visit('/');
+        cy.log('/');
     }); 
 })
