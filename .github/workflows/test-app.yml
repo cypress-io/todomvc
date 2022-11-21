@@ -1,14 +1,7 @@
 name: E2E
 on:
-  workflow_dispatch:
-    inputs:
-      environment:
-        description: 'Environment to run tests against'
-        required: true
-        default: 'master'
-        type: choice
-        options:
-          - master
+  repository_dispatch:
+    types: [ e2e-command ]
 jobs:
   cypress-run:
     runs-on: ubuntu-latest
