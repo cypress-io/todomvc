@@ -18,5 +18,3 @@ jobs:
       - name: Run e2e tests
         run: |
           yarn cypress run --browser electron
-        env:
-          CYPRESS_INCLUDE_TAGS: smoke
