@@ -152,7 +152,7 @@ describe('TodoMVC', function () {
       .eq(2)
       .find('label')
       .should('contain', TODO_ITEM_THREE)
-    })
+    }) 
 
     it('should show #main and #footer when items added', function () {
       cy.createTodo(TODO_ITEM_ONE) 
