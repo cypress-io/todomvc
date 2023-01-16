@@ -155,7 +155,7 @@ describe('TodoMVC', function () {
     })
 
     it('should show #main and #footer when items added', function () {
-      cy.createTodo(TODO_ITEM_ONE)
+      cy.createTodo(TODO_ITEM_ONE) 
       cy.get('.main').should('be.visible')
       cy.get('.footer').should('be.visible')
     })
