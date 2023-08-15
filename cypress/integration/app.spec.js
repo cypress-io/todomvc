@@ -61,6 +61,10 @@ describe('TodoMVC', function () {
 
     cy.get('.todo-list li').should('have.length', 2)
   })
+  it.only('Get button and widescreen', () =>{
+    cy.get('body');
+    cy.viewport(window.screen.width, window.screen.height);
+  })
 
   context('No Todos', function () {
     it('should hide #main and #footer', function () {
