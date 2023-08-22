@@ -55,7 +55,7 @@ describe('TodoMVC', function () {
 
   // a very simple example helpful during presentations
   it('adds 2 todos', function () {
-    cy.get('.new-todos')
+    cy.get('.new-todo')
     .type('learn testing{enter}')
     .type('be cool{enter}')
 
