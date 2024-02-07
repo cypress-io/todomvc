@@ -11,7 +11,7 @@
 // https://on.cypress.io/commands
 // ***********************************************
 
-Cypress.Commands.add('createDefaultTodos', function () {
+Cypress.Commands.add('createDefaultTodos', function () { //1st change
 
   let TODO_ITEM_ONE = 'buy some cheese'
   let TODO_ITEM_TWO = 'feed the cat'
